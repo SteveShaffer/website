@@ -16,23 +16,54 @@
   <style>
     body {
       background-color: #eee;
+      font-family: 'Inconsolata', 'Roboto Mono', 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
+    .avatar {
       width: 200px;
       height: 200px;
-      margin-top: -100px;
-      margin-left: -100px;
       border-radius: 10px;
       box-shadow: 0 0 14px #333;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    a {
+      margin-top: 20px;
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+    }
+    a img.icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
-  <a href="mailto:info@shaffer.tech">
-    <img src="avatar.jpg" alt="Steve Shaffer"/>
-  </a>
+  <img class="avatar" src="avatar.jpg" alt="Steve Shaffer"/>
+  <h1>Steve Shaffer</h1>
+  <div class="links">
+    <a href="mailto:steve@shaffer.tech">✉️ Email</a>
+    <a href="https://github.com/steveshaffer" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon"/>GitHub
+    </a>
+    <a href="https://linkedin.com/in/steveshaf" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="icon"/>LinkedIn
+    </a>
+    <a href="https://go.shaffer.tech#appointment" target="_blank">🗓️ Public Office Hours</a>
+  </div>
 </body>
 </html>
